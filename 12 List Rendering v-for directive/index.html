@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Rendering v-for directive</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="view-app">
+        <ul>
+            <li v-for="student in studentes">{{student}}</li>
+        </ul>
+        <ul>
+            <li v-for="teacher in techers">{{ teacher.name }}:{{ teacher.subject }}:{{teacher.section}}:{{teacher.Block}}:{{teacher.location.street}}:{{teacher.location.city}}</li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

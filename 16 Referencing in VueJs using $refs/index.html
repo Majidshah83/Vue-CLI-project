@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencing in VueJs using $refs</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="view-app">
+        <p ref="para">This is paraghraph</p>
+        Name:<input type="text" placeholder="Enter Name" ref="textname"><br></br>
+        Email:<input type="email" placeholder="Enter Email" ref="textemail"><br></br>
+        <button type="button" @click="btnsubmit">Submit</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

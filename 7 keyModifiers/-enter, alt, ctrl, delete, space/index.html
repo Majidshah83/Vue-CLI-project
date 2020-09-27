@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Modifiers</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="view-app">
+   <input type="text" placeholder="Press enter ....." @keyup.enter="keypressfunction">
+    <br></br>
+    <input type="text" placeholder="press alt.enter....." @keyup.alt.enter="keypressfunctions">
+    <br></br>
+    <input type="text" placeholder="press backspace ....." @keyup.delete="keypressfunctio1">
+    <br></br>
+    <input type="text" placeholder="press conter.enter ....." @keyup.control.enter="keypressfunctio2">
+    <br></br>
+    <input type="text" placeholder="press space ....." @keyup.space="keypressfunctio3">
+    <br></br>
+    <input type="text" placeholder="press A get code ....." @keyup.65="keypressfunctio4">
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

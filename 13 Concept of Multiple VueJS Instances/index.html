@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept of Multiple VueJS Instances</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+
+    <h1>after this first app</h1>
+    <div id="view-app1">
+    <p>First title:{{titile}}</p>
+    <p>{{secondapp()}}</p>
+    </div>
+   <h1>after this second app</h1>
+    <div id="view-app2">
+        <p>Second title:{{secondTitle}}</p>
+        <p>First title:{{titile}}</p>
+        <p>{{secondapp()}}</p>
+        <h2>after that this 3rd fuction </h2>
+        <p>{{thirdapp()}}</p>
+        <p>computed from myapp1:{{accesscomputed()}}</p>
+    </div>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>

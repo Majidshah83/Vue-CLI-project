@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+    <title>Document</title>
+    <style>
+        .imge {
+            width: 100px;
+            height: 100px;
+        }
+        .p1{
+         color:chartreuse;
+         background: chocolate;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:blue">(1)HTml Attriubte binding </h1>
+    <div id="view-app">
+        <a v-bind:href="ylink" v-bind:title="title">{{name}}</a><br>
+        <h1 style="color:blue">(2)HTml class binding </h1>
+        <img v-bind:src="imagelink" v-bind:class="{imge:isActive}">
+        <h1 style="color:blue">(3)HTml Input binding </h1><br>
+        <form method="post">
+            Name:<input type="text" v-bind:value="nametext1" placeholder="Name">
+            Email:<input type="text" v-bind:value="emailtext1" placeholder="email">
+            <button input type="submit">Submit</button>
+            <div v-html="htmlcontent" v-bind:class="{p1:isclassactive}"></div> 
+        </form>
+          
+    </div>
+  
+
+    <script src="index.js"></script>
+</body>
+
+</html>

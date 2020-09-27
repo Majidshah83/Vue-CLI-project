@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+    <title>Event Handling</title>
+</head>
+<body>
+<div id="view-app">
+<h1>counter:{{counter}}</h1>
+<button type="button" @click="increment(1)" name="button">increment1</button>
+<button type="button" v-on:click="decrement(1)" name="button">decrement1</button>
+<button type="button" @dblclick="increment(5)">increment5</button>
+<button type="button" v-on:dblclick="decrement(5)">decrement5</button>
+
+</div>
+
+
+ <script src="main.js"></script>
+</body>
+</html>

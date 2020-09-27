@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+    <title>Event Modifiers</title>
+</head>
+<body>
+
+    <div id="view-app">
+        <h1>counter:{{counter}}</h1>
+        <button type="button" name="button" @click.once="incrment">incrment+1</button>
+        <br> </br>
+        <a href="https://www.youtube.com/watch?v=Zza7TgGT-3E&list=PLT9miexWCpPUZ-xD9s70PhhP37blPSuax&index=8"
+            @click.prevent>google</a>
+        <br> </br>
+        <form action="#" method="post" @submit.prevent>
+            <button type="submit" name="button">submit</button>
+        </form>
+
+        <br> </br>
+        <div id="parent-div" @click="submitclick">
+            <button id="child-div" type="button" @click.stop="submitclick">click me</button>
+        </div>
+        <br> </br>
+        <div class="parent-class" @click.capture="parentclass">
+            <button type="button" name="button" @click="btnclick">click me again</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
